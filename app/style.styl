@@ -2,8 +2,20 @@
 
 global-reset()
 
+*
+  box-sizing border-box
+
+blue = #3EACF7
+
+
 body
   text-align center
+
+h2
+  font 300 30px/40px Helvetica
+
+p
+  font 300 15px/22px Helvetica
 
 buttonize(padding = 10px, margin = 10px)
   margin margin
@@ -17,4 +29,46 @@ buttonize(padding = 10px, margin = 10px)
   display inline-block
 
 
+.container
+  max-width 1000px
+  margin 0 auto
+  position relative
+  clearfix()
 
+  .column
+    width 50%
+    float left
+    padding 20px
+
+
+
+.first
+  background blue
+  padding 40px 10px
+  text-align left
+
+  h2
+    color #fff
+    border-bottom 1px solid #fff
+    margin-bottom 15px
+  p
+    color #fff
+
+  .column
+    img
+      width 100%
+
+  .container2
+     max-width 1000px
+     margin 0 auto
+     position relative
+     clearfix()
+
+  .column2
+    width 50%
+    float right
+    padding 20px
+
+  .column
+    img
+      width 100%
